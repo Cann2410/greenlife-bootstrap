@@ -1,0 +1,514 @@
+/* =========================================
+   GREENLIFE - CUSTOM CSS
+   Bootstrap is used as the main framework.
+========================================= */
+
+
+/* ================= GENERAL ================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7faf7;
+    color: #26382c;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
+
+
+/* ================= COLORS ================= */
+
+:root {
+    --green-dark: #245437;
+    --green: #3f8a58;
+    --green-light: #e5f1e7;
+    --green-soft: #eef7ef;
+    --text-muted: #6b776e;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.brand-logo {
+    color: var(--green-dark) !important;
+    font-size: 25px;
+}
+
+.navbar .nav-link {
+    color: #33463a;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: var(--green);
+}
+
+.cart-btn {
+    background: var(--green);
+    color: white;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.cart-btn:hover {
+    background: var(--green-dark);
+    color: white;
+}
+
+.cart-btn .badge {
+    background: white;
+    color: var(--green);
+}
+
+
+/* ================= BUTTONS ================= */
+
+.btn-green {
+    background: var(--green);
+    border-color: var(--green);
+    color: white;
+    border-radius: 30px;
+    padding: 11px 23px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-green:hover {
+    background: var(--green-dark);
+    border-color: var(--green-dark);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-outline-green {
+    border: 2px solid var(--green);
+    color: var(--green);
+    border-radius: 30px;
+    padding: 10px 22px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-outline-green:hover {
+    background: var(--green);
+    color: white;
+}
+
+
+/* ================= HERO ================= */
+
+.hero-section {
+    min-height: 650px;
+    padding: 90px 0;
+    background: linear-gradient(
+        135deg,
+        #f1f8f2,
+        #e2f0e4
+    );
+    display: flex;
+    align-items: center;
+}
+
+.hero-label {
+    color: var(--green);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero-section h1 {
+    color: var(--green-dark);
+    line-height: 1.05;
+}
+
+.hero-section h1 span {
+    display: block;
+    color: var(--green);
+}
+
+.hero-description {
+    max-width: 570px;
+    color: var(--text-muted);
+    margin: 25px 0 30px;
+}
+
+.hero-plant {
+    width: 360px;
+    height: 360px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #d4e9d7;
+    border-radius: 50%;
+
+    font-size: 190px;
+
+    box-shadow:
+        0 25px 50px rgba(40, 90, 50, 0.15);
+
+    animation: floatPlant 4s ease-in-out infinite;
+}
+
+@keyframes floatPlant {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+
+/* ================= FEATURES ================= */
+
+.feature-card {
+    padding: 30px 25px;
+    background: white;
+    border-radius: 16px;
+
+    box-shadow:
+        0 7px 25px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-7px);
+}
+
+.feature-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--green-light);
+    color: var(--green);
+
+    border-radius: 50%;
+
+    font-size: 30px;
+}
+
+.feature-card h3 {
+    color: var(--green-dark);
+}
+
+
+/* ================= SECTIONS ================= */
+
+.section-padding {
+    padding: 90px 0;
+}
+
+.section-heading {
+    max-width: 650px;
+    margin: 0 auto 50px;
+}
+
+.section-label {
+    color: var(--green);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+
+/* ================= PRODUCT CARDS ================= */
+
+.product-card {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.plant-image {
+    height: 220px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--green-soft);
+
+    font-size: 105px;
+
+    transition: 0.3s;
+}
+
+.product-card:hover .plant-image {
+    background: #dcecdc;
+}
+
+.category {
+    color: var(--green);
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.product-card h3 {
+    color: var(--green-dark);
+}
+
+.price {
+    color: var(--green);
+}
+
+.add-cart {
+    border: none;
+    background: var(--green-light);
+    color: var(--green-dark);
+
+    border-radius: 20px;
+    padding: 8px 13px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.add-cart:hover {
+    background: var(--green);
+    color: white;
+}
+
+
+/* ================= TIPS ================= */
+
+.tips-section {
+    background: #edf6ee;
+}
+
+.tip-card {
+    padding: 30px 20px;
+
+    background: white;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.05);
+
+    transition: 0.3s;
+}
+
+.tip-card:hover {
+    transform: translateY(-6px);
+}
+
+.tip-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.tip-card h3 {
+    color: var(--green-dark);
+}
+
+
+/* ================= ABOUT ================= */
+
+.about-visual {
+    min-height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #dceede;
+
+    border-radius: 25px;
+
+    font-size: 180px;
+
+    box-shadow:
+        0 20px 45px rgba(40, 90, 50, 0.12);
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-section {
+    background: var(--green-dark);
+    color: white;
+}
+
+.contact-description {
+    color: #d8e7db;
+}
+
+.contact-card {
+    height: 100%;
+    padding: 30px 20px;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    border-radius: 16px;
+
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    background: rgba(255, 255, 255, 0.16);
+    transform: translateY(-5px);
+}
+
+.contact-card i {
+    font-size: 35px;
+    color: #b8dbbe;
+}
+
+.contact-card p {
+    color: #dce8de;
+    margin-bottom: 0;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    padding: 30px 0;
+
+    background: #172d1f;
+
+    color: white;
+}
+
+.footer h3 {
+    color: #a9d4b1;
+}
+
+.footer p,
+.footer small {
+    color: #c7d6ca;
+}
+
+
+/* ================= CART ================= */
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.remove-item {
+    border: none;
+    background: #f5dddd;
+    color: #9a3c3c;
+
+    padding: 5px 10px;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+}
+
+.empty-cart {
+    color: #777;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+
+    .hero-section {
+        min-height: auto;
+        padding: 80px 0;
+    }
+
+    .hero-plant {
+        width: 300px;
+        height: 300px;
+        font-size: 155px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    .hero-section {
+        text-align: center;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-plant {
+        width: 250px;
+        height: 250px;
+        font-size: 125px;
+    }
+
+    .about-visual {
+        min-height: 300px;
+        font-size: 130px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .brand-logo {
+        font-size: 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 42px;
+    }
+
+    .hero-plant {
+        width: 210px;
+        height: 210px;
+        font-size: 105px;
+    }
+
+    .plant-image {
+        height: 190px;
+    }
+
+}
